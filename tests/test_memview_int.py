@@ -1,4 +1,4 @@
-import h3.api.memview_int as h3
+import h3fake2.api.memview_int as h3
 
 
 def test1():

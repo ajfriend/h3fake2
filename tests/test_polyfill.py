@@ -1,4 +1,4 @@
-import h3
+import h3fake2 as h3
 import itertools
 import pytest
 

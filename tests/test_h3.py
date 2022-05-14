@@ -1,14 +1,14 @@
 import pytest
 from pytest import approx
 
-import h3
+import h3fake2 as h3
 
 
 def test_nested_import():
     """ Test that we can import `h3.h3`
     For backwards-compatibility
     """
-    from h3 import h3
+    from h3fake2 import h3
     assert h3.geo_to_h3(37.3615593, -122.0553238, 5) == '85283473fffffff'
 
 

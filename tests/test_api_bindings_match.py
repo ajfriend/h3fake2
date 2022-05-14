@@ -2,8 +2,8 @@ import inspect
 
 
 def test_api_copy_match():
-    import h3
-    import h3.api.numpy_int
+    import h3fake2 as h3
+    import h3fake2.api.numpy_int
 
     apis = [
         h3.api.basic_int._public_api,

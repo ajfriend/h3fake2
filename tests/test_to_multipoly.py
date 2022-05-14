@@ -1,4 +1,4 @@
-import h3
+import h3fake2 as h3
 
 
 def test_h3_set_to_multi_polygon():

@@ -1,6 +1,6 @@
 import numpy as np  # only run this test suite if numpy is installed
 import pytest
-from h3.api import (
+from h3fake2.api import (
     basic_int,
     numpy_int,
     memview_int,

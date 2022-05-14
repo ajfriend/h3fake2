@@ -1,4 +1,4 @@
-import h3.api.basic_int as h3
+import h3fake2.api.basic_int as h3
 
 
 def test_int_output():
