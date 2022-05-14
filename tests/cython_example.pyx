@@ -1,7 +1,7 @@
 from cython cimport boundscheck, wraparound
 
-from h3._cy.h3lib cimport H3int
-from h3._cy.geo cimport geo_to_h3
+from h3fake2._cy.h3lib cimport H3int
+from h3fake2._cy.geo cimport geo_to_h3
 
 @boundscheck(False)
 @wraparound(False)
