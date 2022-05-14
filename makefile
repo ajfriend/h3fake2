@@ -17,6 +17,7 @@ init: purge
 
 clear:
 	-env/bin/pip uninstall -y h3
+	-env/bin/pip uninstall -y h3fake2
 	-@rm -rf MANIFEST
 	-@rm -rf annotations
 	-@rm -rf .pytest_cache tests/__pycache__ __pycache__ _skbuild dist .coverage
