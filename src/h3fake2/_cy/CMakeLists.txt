@@ -12,7 +12,7 @@ macro(add_cython_file filename)
     python_extension_module(${filename})
     set_property(TARGET ${filename} PROPERTY C_STANDARD 99)
     target_link_libraries(${filename} h3)
-    install(TARGETS ${filename} LIBRARY DESTINATION src/h3/_cy)
+    install(TARGETS ${filename} LIBRARY DESTINATION src/h3fake2/_cy)
 endmacro()
 
 # GLOB pattern is recommended against
@@ -37,5 +37,5 @@ install(
         util.pxd
         util.pyx
     DESTINATION
-        src/h3/_cy
+        src/h3fake2/_cy
 )

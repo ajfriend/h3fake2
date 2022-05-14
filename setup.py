@@ -5,7 +5,7 @@ from skbuild import setup
 here = os.path.abspath(os.path.dirname(__file__))
 
 about = {}
-with open(os.path.join(here, 'src', 'h3', '_version.py')) as f:
+with open(os.path.join(here, 'src', 'h3fake2', '_version.py')) as f:
     exec(f.read(), about)
 
 

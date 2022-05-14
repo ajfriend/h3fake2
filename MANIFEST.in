@@ -10,7 +10,7 @@ include readme.md
 include requirements.in
 include setup.py
 
-graft src/h3/
+graft src/h3fake2/
 
 prune src/h3lib/
 

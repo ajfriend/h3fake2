@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.7.2)
 
-project(h3)
+project(h3fake2)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 # Always make a release build
@@ -18,11 +18,11 @@ add_subdirectory(src/h3lib)
 
 # Build the rest (other than the core library dependency) as shared
 set(BUILD_SHARED_LIBS ON)
-add_subdirectory(src/h3)
+add_subdirectory(src/h3fake2)
 
 # Include built h3api.h for Cython API
 install(
     FILES
         "${CMAKE_CURRENT_BINARY_DIR}/src/h3lib/src/h3lib/include/h3api.h"
     DESTINATION
-        src/h3/_cy)
+        src/h3fake2/_cy)
