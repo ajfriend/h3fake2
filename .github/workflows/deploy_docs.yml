@@ -30,7 +30,7 @@ jobs:
 
       - name: Lint
         # run: flake8 --ignore=E501 h3.py
-        run: flake8 src/h3
+        run: flake8 src/h3fake2
 
       # Build the book
       - name: Build the book

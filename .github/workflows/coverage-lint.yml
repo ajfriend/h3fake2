@@ -26,7 +26,7 @@ jobs:
           pip install .[all]
 
       - name: Lint
-        run: flake8 src/h3 setup.py tests
+        run: flake8 src/h3fake2 setup.py tests
 
       - name: Pylint
         # As a test for visibility of API bindings, we want to ensure that pylint has no
@@ -37,7 +37,7 @@ jobs:
         run: |
           pip install Cython
           cythonize -i tests/cython_example.pyx
-          pytest --cov=h3 --full-trace --cov-report=xml
+          pytest --cov=h3fake2 --full-trace --cov-report=xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3.0.0
@@ -48,7 +48,7 @@ jobs:
       - name: Copy Cython annotations to project dir
         run: |
           mkdir annotations
-          cp _skbuild/*/cmake-build/src/h3/_cy/*.html ./annotations
+          cp _skbuild/*/cmake-build/src/h3fake2/_cy/*.html ./annotations
 
       - name: Upload artifacts to GitHub
         uses: actions/upload-artifact@v3

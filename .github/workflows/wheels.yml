@@ -35,11 +35,11 @@ jobs:
       - name: Install from sdist
         run: |
           pip install --upgrade pip setuptools wheel
-          cp dist/h3-*.tar.gz h3.tar.gz
+          cp dist/h3fake2-*.tar.gz h3.tar.gz
           pip install h3.tar.gz[all]
 
       - name: Test sdist
-        run: pytest --cov=h3 --full-trace
+        run: pytest --cov=h3fake2 --full-trace
 
       - name: Upload artifacts to GitHub
         uses: actions/upload-artifact@v3
