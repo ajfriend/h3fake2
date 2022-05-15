@@ -33,14 +33,14 @@ purge: clear
 
 annotations: rebuild
 	mkdir -p annotations
-	cp _skbuild/*/cmake-build/src/h3/_cy/*.html ./annotations
+	cp _skbuild/*/cmake-build/src/h3fake2/_cy/*.html ./annotations
 
 test:
 	env/bin/cythonize -i tests/cython_example.pyx
-	env/bin/pytest tests --cov=h3 --cov-report term-missing --durations=10
+	env/bin/pytest tests --cov=h3fake2 --cov-report term-missing --durations=10
 
 lint:
-	env/bin/flake8 src/h3 setup.py tests
+	env/bin/flake8 src/h3fake2 setup.py tests
 	env/bin/pylint --disable=all --enable=import-error tests/
 
 lab:
